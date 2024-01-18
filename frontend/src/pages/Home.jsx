@@ -7,9 +7,6 @@ import { BsInfoCircle } from "react-icons/bs";
 import { MdOutlineAddBox, MdOutlineDelete } from "react-icons/md";
 import BooksTable from "../components/home/BooksTable";
 import BooksCard from "../components/home/BooksCard";
-import dotenv from "dotenv";
-
-dotenv.config();
 
 const Home = () => {
   const [books, setBooks] = useState([]);
@@ -19,13 +16,13 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`${import.meta.env.REACT_APP_BACKEND_URL}/books`)
+      .get("https://bookstoreback.vercel.app/books")
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);
       })
       .catch((error) => {
-        console.log(error);
+        console.error("Error fetching data:", error);
         setLoading(false);
       });
   }, []);
