@@ -7,6 +7,9 @@ import { BsInfoCircle } from "react-icons/bs";
 import { MdOutlineAddBox, MdOutlineDelete } from "react-icons/md";
 import BooksTable from "../components/home/BooksTable";
 import BooksCard from "../components/home/BooksCard";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const Home = () => {
   const [books, setBooks] = useState([]);
@@ -16,7 +19,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:5555/books")
+      .get(`${process.env.REACT_APP_BACKEND_URL}/books`)
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);
