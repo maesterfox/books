@@ -7,9 +7,8 @@ const router = express.Router();
 router.post("/", async (request, response) => {
   try {
     if (
-      !request.body.title ||
-      !request.body.author ||
-      !request.body.publishYear
+      (!request.body.title || !request.body.author || !request.body.publishYear,
+      !request.body.summary)
     ) {
       return response.status(400).send({
         message: "Send all required fields: title, author, publishYear",
@@ -19,6 +18,7 @@ router.post("/", async (request, response) => {
       title: request.body.title,
       author: request.body.author,
       publishYear: request.body.publishYear,
+      summary: request.body.summary,
     };
 
     const book = await Book.create(newBook);
@@ -65,10 +65,12 @@ router.put("/:id", async (request, response) => {
     if (
       !request.body.title ||
       !request.body.author ||
-      !request.body.publishYear
+      !request.body.publishYear ||
+      !request.body.summary
     ) {
       return response.status(400).send({
-        message: "Send all required fields: title, author, publishYear",
+        message:
+          "Send all required fields: title, author, publishYear, summary",
       });
     }
 
