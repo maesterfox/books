@@ -19,7 +19,7 @@ app.use(cors());
 
 app.use(
   cors({
-    origin: "https://booksfront.vercel.app/",
+    origin: "https://bookstore-front.vercel.app/",
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type"],
   })
