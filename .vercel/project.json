@@ -1,0 +1,12 @@
+{
+  "orgId": "team_MDAqVQ8GC6VFvZMcupLVFH6m",
+  "projectId": "prj_BaC39zs5VzN0XTK4MjSwmaGlydN2",
+  "builds": [
+    {
+      "src": "frontend",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "frontend/dist", "buildCommand": "npm install && npm run build" }
+    },
+    { "src": "backend", "use": "@vercel/node" }
+  ]
+}
