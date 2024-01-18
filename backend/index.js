@@ -4,6 +4,10 @@ import mongoose from "mongoose";
 import booksRoute from "./routes/booksRoute.js";
 import cors from "cors";
 
+import dotenv from "dotenv";
+dotenv.config();
+
+// Create Express App
 const app = express();
 
 // Middleware for parsing request body
