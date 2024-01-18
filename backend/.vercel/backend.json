@@ -1,4 +1,5 @@
 {
-    "orgId": "team_MDAqVQ8GC6VFvZMcupLVFH6m",
-    "projectId": "prj_SomeOtherProjectIdForBackend"
+  "env": {
+      "BACKEND_URL": "https://bookstoreback.vercel.app"
   }
+}

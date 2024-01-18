@@ -1,4 +1,15 @@
 {
-  "orgId": "team_MDAqVQ8GC6VFvZMcupLVFH6m",
-  "projectId": "prj_SomeOtherProjectIdForFrontend"
+  "builds": [
+    {
+      "src": "build",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "frontend/dist",
+        "buildCommand": "REACT_APP_BACKEND_URL=$REACT_APP_BACKEND_URL npm run build"
+      }
+    }
+  ],
+  "env": {
+    "REACT_APP_BACKEND_URL": "@backend-url"
+  }
 }
