@@ -1,0 +1,23 @@
+[33mcommit 2e6250f5782664cb00939f8d9ac7dc57a32fc613[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: maesterfox <talentedmrfox@hotmail.com>
+Date:   Thu Jan 18 12:51:04 2024 +0000
+
+    tailwind styles, dotenv, responsiveness
+
+[33mcommit e4e55a733a8cd77969e67186f9aa9971534b8761[m
+Author: maesterfox <talentedmrfox@hotmail.com>
+Date:   Thu Jan 18 11:07:42 2024 +0000
+
+    fixing mongodb issues
+
+[33mcommit 717bbd3fcdce5d4b824ea1a3cfed2110b898b4ab[m
+Author: maesterfox <talentedmrfox@hotmail.com>
+Date:   Wed Jan 17 22:07:46 2024 +0000
+
+    readme
+
+[33mcommit d21c943cbc02577622eb0a3f509d226dcc141bac[m
+Author: maesterfox <talentedmrfox@hotmail.com>
+Date:   Wed Jan 17 21:01:22 2024 +0000
+
+    initial commit
