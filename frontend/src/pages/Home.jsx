@@ -19,7 +19,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`${process.env.REACT_APP_BACKEND_URL}/books`)
+      .get(`${import.meta.env.REACT_APP_BACKEND_URL}/books`)
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);
