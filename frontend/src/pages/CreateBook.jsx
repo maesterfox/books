@@ -19,6 +19,7 @@ const CreateBooks = () => {
       title,
       author,
       publishYear,
+      summary,
     };
     setLoading(true);
     axios

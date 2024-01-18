@@ -38,6 +38,7 @@ const EditBook = () => {
       title,
       author,
       publishYear,
+      summary,
     };
     setLoading(true);
     axios
