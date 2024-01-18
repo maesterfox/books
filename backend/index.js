@@ -15,11 +15,11 @@ app.use(express.json());
 
 // Middleware for handling CORS POLICY
 // Option 1: Allow All Origins with Default of cors(*)
-app.use(cors());
+app.use(cors({ origin: true, credentials: true }));
 
 app.use(
   cors({
-    origin: "https://bookstore-front-mauve.vercel.app/",
+    origin: "https://bookstore-front-mauve.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type"],
   })
