@@ -1,5 +1,7 @@
 # Bookstore Project
 
+https://bookstore.davidfoxdev.co.uk
+
 ## Overview
 This MERN (MongoDB, Express.js, React, Node.js) project, named 'Bookstore,' is a web application that allows users to manage a collection of books.
 
@@ -51,3 +53,7 @@ npm run dev
 
 
 Feel free to modify or add any additional details based on your project's specific requirements.
+
+Author:
+
+David Fox (Portfolio: https://davidfoxdev.co.uk, Blog: https://blog.davidfoxdev.co.uk, LinkedIn: https://www.linkedin.com/in/davidfoxtechcode/)
