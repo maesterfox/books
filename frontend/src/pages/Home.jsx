@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("https://bookstoreback.vercel.app/books")
+      .get("http://localhost:5555/books")
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);
@@ -31,7 +31,7 @@ const Home = () => {
     <div className="p-4 m-2 font-poppins">
       <div className="flex justify-center items-center gap-x-4 mt-4">
         <button
-          className={`bg-sky-300 hover:bg-sky-600 px-4 py-2 rounded-lg ${
+          className={`bg-sky-300 hover:bg-sky-600 px-4 py-2 rounded-lg shadow-md shadow-stone-800 ${
             showType === "table" ? "text-white bg-sky-800" : ""
           }`}
           onClick={() => setShowType("table")}
@@ -39,7 +39,7 @@ const Home = () => {
           Table
         </button>
         <button
-          className={`bg-sky-300 hover:bg-sky-600 px-4 py-2 rounded-lg ${
+          className={`bg-sky-300 hover:bg-sky-600 px-4 py-2 rounded-lg shadow-md shadow-stone-800 ${
             showType === "card" ? "text-white bg-sky-800" : ""
           }`}
           onClick={() => setShowType("card")}

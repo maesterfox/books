@@ -1,5 +1,0 @@
-{
-  "env": {
-      "BACKEND_URL": "https://bookstoreback.vercel.app/books"
-  }
-}
