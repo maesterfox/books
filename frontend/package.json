@@ -15,11 +15,6 @@
     "build:css:watch": "tailwindcss build src/styles.css -o public/styles.css --watch",
     "preview": "vite preview"
   },
-  "vercel": {
-    "env": {
-      "REACT_APP_BACKEND_URL": "https://bookstoreback.vercel.app"
-    }
-  },
   "dependencies": {
     "axios": "^1.6.5",
     "dotenv": "^16.3.1",
