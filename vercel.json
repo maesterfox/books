@@ -5,17 +5,14 @@
       "src": "frontend",
       "use": "@vercel/static-build",
       "config": { "distDir": "dist/frontend" }
-    },
-    {
-      "src": "backend",
-      "use": "@vercel/node"
     }
   ],
   "routes": [
     { "handle": "filesystem" },
     {
       "src": "/api/(.*)",
-      "dest": "backend/$1"
+      "dest": "https://your-heroku-app-url/$1",
+      "methods": ["GET", "POST", "PUT", "DELETE"]
     },
     {
       "src": "/(.*)",
