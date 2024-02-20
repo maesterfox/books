@@ -2,21 +2,21 @@
   "version": 2,
   "builds": [
     {
-      "src": "frontend",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "dist/frontend" }
+      "src": "./api/books.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
-    { "handle": "filesystem" },
     {
-      "src": "/api/(.*)",
-      "dest": "https://your-heroku-app-url/$1",
-      "methods": ["GET", "POST", "PUT", "DELETE"]
-    },
-    {
-      "src": "/(.*)",
-      "dest": "frontend/$1"
+      "src": "/api/books.js",
+      "dest": "./api/books.js"
     }
-  ]
+  ],
+  "functions": {
+    "api/books.js": {
+      "package": {
+        "include": ["../backend/package.json"]
+      }
+    }
+  }
 }
