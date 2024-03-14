@@ -1,5 +1,6 @@
 # Bookstore Project
 
+Undeployed backend possibilities(TBD): AWS, Azure, my IONOS server
 https://bookstore.davidfoxdev.co.uk
 
 ## Overview
